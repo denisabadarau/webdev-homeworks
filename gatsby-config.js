@@ -1,14 +1,25 @@
 module.exports = {
-  siteMetadata: {
-    title: `cyte`,
-    siteUrl: `https://www.yourdomain.tld`
-  },
-  plugins: ["gatsby-plugin-mdx", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    siteMetadata: {
+        title: `cyte`,
+        siteUrl: `https://www.yourdomain.tld`
     },
-    __key: "pages"
-  }]
+    plugins: [
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'pages',
+                path: './src/pages/'
+            },
+            __key: 'pages'
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'markdown',
+                path: './src/markdown/'
+            },
+            __key: 'markdown'
+        },
+        `gatsby-transformer-remark`,
+    ]
 };
