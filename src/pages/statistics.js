@@ -39,7 +39,7 @@ export default function Statistics() {
                 <strong>
                     free_users<sub>i</sub>
                 </strong>{' '}
-                ) * 100 *{' '}
+                ) / 100 *{' '}
                 <strong>
                     average_price<sub>i</sub>
                 </strong>
