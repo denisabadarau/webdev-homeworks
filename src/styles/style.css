@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    border: 10px solid white;
+}
+
+td {
+    background-color: #F5F5F5;
+    text-align: left;
+    padding: 15px 5px;
+    font-weight: 600;
+}
+
+
+th {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+span {
+    margin-left: 5px;
+    font-weight: 600;
+}
